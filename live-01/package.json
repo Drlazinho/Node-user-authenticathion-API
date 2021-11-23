@@ -1,0 +1,17 @@
+{
+  "name": "ms-authentication",
+  "version": "1.0.0",
+  "description": "Microservice de autenticação criado durante o live com o pessoal da DIO",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "node ./",
+    "build": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lázaro Pimentel",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.11.9",
+    "typescript": "^4.5.2"
+  }
+}
