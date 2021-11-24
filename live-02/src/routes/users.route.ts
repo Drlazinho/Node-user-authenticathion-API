@@ -1,3 +1,4 @@
+import { Console } from 'console';
 import {Router, Response, Request, NextFunction} from 'express';
 import {StatusCodes} from 'http-status-codes'
 import { DatabaseError } from 'pg-protocol';
