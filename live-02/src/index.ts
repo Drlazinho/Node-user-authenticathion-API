@@ -1,4 +1,5 @@
 import express from 'express';
+import errorHandler from './middleware/error-handler.middleware';
 import statusRoutes from './routes/status.route';
 // Express é um gerenciador de rotas de API REST.
 import usersRouter from './routes/users.route';
@@ -12,6 +13,9 @@ app.use(express.urlencoded({extended: true}));
 //Configuração de rotas
 app.use(usersRouter)
 app.use(statusRoutes)
+
+//Configuração dos Handlers de Erro
+app.use(errorHandler)
 
 //inicialização do servidor
 app.listen(3000, () => {
